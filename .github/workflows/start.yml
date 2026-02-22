@@ -3,7 +3,7 @@ name: Start EC2
 on:
   push:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '0 13 * * *'   # 6:30 PM IST
   workflow_dispatch:
 
 jobs:
