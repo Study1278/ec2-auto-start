@@ -2,7 +2,7 @@ name: Start EC2
 
 on:
   schedule:
-    - cron: '50 11 * * *'   # 5:20 PM IST
+    - cron: '55 11 * * *'   # 5:25 PM IST
   workflow_dispatch:
 
 jobs:
