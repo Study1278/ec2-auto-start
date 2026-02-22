@@ -2,7 +2,7 @@ name: Start EC2
 
 on:
   schedule:
-    - cron: '*/5 * * * *'   # Runs every 5 minutes (UTC)
+    - cron: '30 2 * * 1-5'   # 8:00 AM IST (Mon–Fri)
   workflow_dispatch:
 
 jobs:
@@ -10,13 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Show Time (Debug)
-        run: |
-          echo "UTC Time:"
-          date -u
-          echo "Runner Time:"
-          date
-
       - name: Configure AWS
         uses: aws-actions/configure-aws-credentials@v4
         with:
