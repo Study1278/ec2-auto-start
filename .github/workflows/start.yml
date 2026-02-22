@@ -1,8 +1,9 @@
 name: Start EC2
 
 on:
+  push:
   schedule:
-    - cron: '*/5 * * * *'   # 8:00 AM IST (Mon–Fri)
+    - cron: '*/5 * * * *'
   workflow_dispatch:
 
 jobs:
